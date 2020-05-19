@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C0J-pP-LTD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loss-connection-sphero-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Yw-pwz">
+                                <rect key="frame" x="165.5" y="793" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TC1-Yw-pwz" secondAttribute="height" multiplier="1:1" id="Mkf-v0-tmU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="emotiv_b.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zaj-aR-2HJ">
+                                <rect key="frame" x="150" y="242" width="300" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zaj-aR-2HJ" secondAttribute="height" multiplier="173:32" id="AGF-Ad-Yy6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sphero Mental Command" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1D-dT-e07">
+                                <rect key="frame" x="105" y="437" width="204" height="24"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C0J-pP-LTD" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="8K0-4G-y2b"/>
+                            <constraint firstItem="p1D-dT-e07" firstAttribute="top" secondItem="Zaj-aR-2HJ" secondAttribute="bottom" id="KHy-rl-7Va"/>
+                            <constraint firstItem="TC1-Yw-pwz" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="QbK-jF-hCy"/>
+                            <constraint firstItem="C0J-pP-LTD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="UcU-lX-bpR"/>
+                            <constraint firstItem="TC1-Yw-pwz" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.2" id="YRa-RC-4bW"/>
+                            <constraint firstItem="Zaj-aR-2HJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="ZSl-Dr-2sZ"/>
+                            <constraint firstItem="TC1-Yw-pwz" firstAttribute="bottom" secondItem="C0J-pP-LTD" secondAttribute="bottom" constant="-20" id="cOW-hf-9v3"/>
+                            <constraint firstItem="p1D-dT-e07" firstAttribute="centerX" secondItem="Zaj-aR-2HJ" secondAttribute="centerX" id="dJo-GH-YdC"/>
+                            <constraint firstItem="TC1-Yw-pwz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ehv-2l-CCc"/>
+                            <constraint firstItem="TC1-Yw-pwz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hGY-nz-EFi"/>
+                            <constraint firstItem="Zaj-aR-2HJ" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="jDs-fO-42M"/>
+                            <constraint firstItem="Zaj-aR-2HJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pUB-7z-xAT"/>
+                            <constraint firstItem="C0J-pP-LTD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="w3c-LI-8Gb"/>
+                            <constraint firstItem="C0J-pP-LTD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wyi-6o-Dhx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QbK-jF-hCy"/>
+                                <exclude reference="ehv-2l-CCc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="168.5" height="299"/>
+        <image name="emotiv_b.png" width="262" height="32"/>
+        <image name="loss-connection-sphero-color.png" width="1140" height="1140"/>
+    </resources>
+</document>
